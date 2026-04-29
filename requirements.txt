@@ -6,3 +6,4 @@ librosa
 python-multipart
 scikit-learn
 soundfile
+scikit-learn==1.6.1
