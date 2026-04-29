@@ -14,6 +14,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def home():
+    return {"message": "API is working"}
 
 model = joblib.load("emotion_model.pkl")
 scaler = joblib.load("scaler.pkl")
